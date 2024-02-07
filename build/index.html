@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>AirBNB - BEM</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300,400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+  
+    <body>
+        
+        <header class="header">
+            <div class="barra contenedor">
+
+                <div class="barra__logo">
+                    <p class="barra__nombre"> </p>
+                </div><!--.barra__logo-->
+
+                <nav class="barra__navegacion">
+                    <a class="barra__link" href="#" class="">Lugares para hospedarte</a>
+                    <a class="barra__link" href="#" class="">Experiencias</a>
+                    <a class="barra__link" href="#" class="">Experiencias en linea</a>
+                </nav><!--.barra__navegacion-->
+
+                <nav class="barra__login">
+                    <a class="barra__link" href="#" class="">Hazte Anfrition</a>
+                </nav><!--barra__login-->
+
+            </div><!--.barra contenedor-->
+ 
+            <form action="" class="formulario contenedor">
+
+                <div class="formulario__campo">
+                    <label for="ubicacion" class="formulario__label">Ubicacion</label>
+                    <input type="text" class="formulario__input" id="ubicacion" placeholder="¿A donde viajas?">
+                </div><!--.formulario__campo-->
+
+                <div class="formulario__campo">
+                    <label for="llegada" class="formulario__label">Llegada</label>
+                    <input type="date" class="formulario__input" id="llegada" >
+                </div><!--.formulario__campo-->
+
+
+                <div class="formulario__campo">
+                    <label for="salida" class="formulario__label">Salida</label>
+                    <input type="date" class="formulario__input" id="salida" >
+                </div><!--.formulario__campo-->
+
+                <div class="formulario__campo">
+                    <label for="huespedes" class="formulario__label">Huéspedes</label>
+                    <input type="number" class="formulario__input" id="huespedes" placeholder="¿Cuántos?" >
+                </div><!--.formulario__campo-->
+
+                <div class="formulario__campo">
+                    <input type="submit" class="formulario__submit" value="Buscar" >
+                </div><!--.formulario__campo-->
+
+            </form><!--formulario contenedor-->
+
+            <div class="header__busqueda contenedor">
+                <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+                <a href="#" class="header__busqueda-boton">Búsqueda flexible</a>
+            </div><!--.header__busqueda contenedor-->
+
+        </header><!--.header--> 
+
+        <section class="destinos contenedor seccion">
+            <h2 class="destinos__heading">Descubre halojamientos populares</h2>
+
+            <ul class="destinos__grid">
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_1.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_1.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_1.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_1.jpg" lazyalt="imagen"   alt="imagen icono_destino_1" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">New York</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_2.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_2.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_2.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_2.jpg" lazyalt="imagen"   alt="imagen icono_destino_2" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">Paris</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_3.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_3.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_3.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_3.jpg" lazyalt="imagen"   alt="imagen icono_destino_3" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">San Francisco</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_4.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_4.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_4.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_4.jpg" lazyalt="imagen"   alt="imagen icono_destino_4" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">Egipto</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_5.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_5.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_5.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_5.jpg" lazyalt="imagen"   alt="imagen icono_destino_5" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">Londres</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_6.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_6.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_6.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_6.jpg" lazyalt="imagen"   alt="imagen icono_destino_6" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">Italia</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_7.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_7.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_7.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_7.jpg" lazyalt="imagen"   alt="imagen icono_destino_7" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">India</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+
+                <li class="destino">
+                    <div class="destino__imagen">
+                        <picture>
+                            <source
+                             srcset="img/icono_destino_8.avif " 
+                             type="image/avif">
+                            <source
+                             srcset="img/icono_destino_8.webp " 
+                             type="image/webp">
+                            <source
+                             srcset="img/icono_destino_8.jpg" 
+                             type="image/jpeg">
+                            <img loading="lazy" decoding="async" src="img/icono_destino_8.jpg" lazyalt="imagen"   alt="imagen icono_destino_8" >
+                        </picture>
+                    </div><!--.destino__imagen-->
+                    <div class="destino__informacion">
+                        <h3 class="destino__nombre">Grecia</h3>
+                        <p class="destino__distancia">4 horas en avión</p>
+                    </div><!--.destino__informacion-->
+                </li><!--.destino-->
+                
+            </ul><!--.destinos__grid-->
+
+        </section><!--.destinos contenedor seccion-->
+
+        <section class="lugares contenedor seccion">
+
+            <h2 class="lugares__heading">Vive en cualquier lugar del mundo</h2>
+            <div class="lugares__grid">
+                <div class="lugar">
+                    <picture>
+                        <source
+                         srcset="img/vive_1.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/vive_1.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/vive_1.jpg" 
+                         type="image/jpeg">
+                        <img class="lugar__imagen" loading="lazy" decoding="async" src="img/vive_1.jpg" lazyalt="imagen"   alt="imagen vive_1" >
+                    </picture>
+                    <p class="lugar__nombre">Escapadas al aire libre</p>
+                </div><!--lugar-->
+
+                <div class="lugar">
+                    <picture>
+                        <source
+                         srcset="img/vive_2.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/vive_2.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/vive_2.jpg" 
+                         type="image/jpeg">
+                        <img class="lugar__imagen" loading="lazy" decoding="async" src="img/vive_2.jpg" lazyalt="imagen"   alt="imagen vive_2" >
+                    </picture>
+                    <p class="lugar__nombre">Alojamientos unicos</p>
+                </div><!--lugar-->
+
+                <div class="lugar">
+                    <picture>
+                        <source
+                         srcset="img/vive_3.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/vive_3.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/vive_3.jpg" 
+                         type="image/jpeg">
+                        <img class="lugar__imagen" loading="lazy" decoding="async" src="img/vive_3.jpg" lazyalt="imagen"   alt="imagen vive_3" >
+                    </picture>
+                    <p class="lugar__nombre">Alojamientos enteros</p>
+                </div><!--lugar-->
+
+                <div class="lugar">
+                    <picture>
+                        <source
+                         srcset="img/vive_4.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/vive_4.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/vive_4.jpg" 
+                         type="image/jpeg">
+                        <img class="lugar__imagen" loading="lazy" decoding="async" src="img/vive_4.jpg" lazyalt="imagen"   alt="imagen vive_4" >
+                    </picture>
+                    <p class="lugar__nombre">Con tu mascotas</p>
+                </div><!--lugar-->
+
+            </div><!--.lugares__grid-->
+
+        </section><!--.lugares contenedor seccion-->
+
+        <section class="anfitrion contenedor seccion">
+            <div class="anfitrion__contenido">
+                <h2 class="anfitrion__heading">Animate a ser anfitrion</h2>
+                <p class="anfitrion__text">Comparte tu espacio para ganar dinero extra y aprovechar nuevas oportunidades</p>
+                <a href="#" class="anfitrion__enlace">Más información</a>
+            </div><!--.anfitrion__contenido-->
+        </section> <!--.anfitrion contenedor seccion-->
+
+        <main class="experiencias contenedor seccion">
+            <h2 class="experiencias__heading">Descubre experiencias</h2>
+            <p class="experiencias__descripcion">Actividades unicas con expertos locales, en persona o en línea</p>
+
+            <div class="experiencias__listado">
+                <div class="experiencia">
+                    <picture>
+                        <source
+                         srcset="img/experiencia_1.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/experiencia_1.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/experiencia_1.jpg" 
+                         type="image/jpeg">
+                        <img class="experiencia__imagen" loading="lazy" decoding="async" src="img/experiencia_1.jpg" lazyalt="imagen" width="500" height="300"  alt="imagen experiencia_1" >
+                    </picture>
+                    <p class="experiencia__titulo">Experiencias</p>
+                    <p class="experiencia__descripcion">Actividades locales estes donde este</p>
+                </div><!--.experiencia-->
+
+                <div class="experiencia">
+                    <picture>
+                        <source
+                         srcset="img/experiencia_2.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/experiencia_2.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/experiencia_2.jpg" 
+                         type="image/jpeg">
+                        <img class="experiencia__imagen" loading="lazy" decoding="async" src="img/experiencia_2.jpg" lazyalt="imagen" width="500" height="300"  alt="imagen experiencia_2" >
+                    </picture>
+                    <p class="experiencia__titulo">Experiencias</p>
+                    <p class="experiencia__descripcion">Visita una ciudad y vive en ella.</p>
+                </div><!--.experiencia-->
+
+
+                <div class="experiencia">
+                    <picture>
+                        <source
+                         srcset="img/experiencia_3.avif " 
+                         type="image/avif">
+                        <source
+                         srcset="img/experiencia_3.webp " 
+                         type="image/webp">
+                        <source
+                         srcset="img/experiencia_3.jpg" 
+                         type="image/jpeg">
+                        <img class="experiencia__imagen" loading="lazy" decoding="async" src="img/experiencia_3.jpg" lazyalt="imagen"  alt="imagen experiencia_3" >
+                    </picture>
+                    <p class="experiencia__titulo">Experiencias en linea</p>
+                    <p class="experiencia__descripcion">Actividades interactivas en vivo</p>
+                </div><!--.experiencia-->
+            </div><!--.experiencias__listado-->
+        </main><!--.experiencias contenedor seccion-->
+
+        <footer class="footer">
+            <div class="footer__grid contenedor">
+                <div class="footer_widget">
+                    <h3 class="footer__heading">Acerca de</h3>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__enlace">enlace1</a>
+                        <a href="#" class="footer__enlace">enlace2</a>
+                        <a href="#" class="footer__enlace">enlace3</a>
+                        <a href="#" class="footer__enlace">enlace4</a>
+                    </nav><!--.footer__menu-->
+                </div><!--.footer_widget-->
+
+                <div class="footer_widget">
+                    <h3 class="footer__heading">Comunidad</h3>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__enlace">enlace1</a>
+                        <a href="#" class="footer__enlace">enlace2</a>
+                        <a href="#" class="footer__enlace">enlace3</a>
+                        <a href="#" class="footer__enlace">enlace4</a>
+                    </nav><!--.footer__menu-->
+                </div><!--.footer_widget-->
+
+                <div class="footer_widget">
+                    <h3 class="footer__heading">Anfitrion</h3>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__enlace">enlace1</a>
+                        <a href="#" class="footer__enlace">enlace2</a>
+                        <a href="#" class="footer__enlace">enlace3</a>
+                        <a href="#" class="footer__enlace">enlace4</a>
+                    </nav><!--.footer__menu-->
+                </div><!--.footer_widget-->
+
+                <div class="footer_widget">
+                    <h3 class="footer__heading">Asistencia</h3>
+                    <nav class="footer__menu">
+                        <a href="#" class="footer__enlace">enlace1</a>
+                        <a href="#" class="footer__enlace">enlace2</a>
+                        <a href="#" class="footer__enlace">enlace3</a>
+                        <a href="#" class="footer__enlace">enlace4</a>
+                    </nav><!--.footer__menu-->
+                </div><!--.footer_widget-->
+            </div><!--.footer__grid contenedor-->
+
+            <div class="footer__barra contenedor">
+                <nav class="footer__barranav">
+                    <a href="#" class="footer__enlace footer__enlace--barra">Enlace Nuevo</a>
+                    <a href="#" class="footer__enlace footer__enlace--barra">Enlace Nuevo</a>
+                    <a href="#" class="footer__enlace footer__enlace--barra">Enlace Nuevo</a>
+                    <a href="#" class="footer__enlace footer__enlace--barra">Enlace Nuevo</a>
+                </nav><!--.footer__barranav-->
+            </div><!--.footer__barra contenedor-->
+        </footer><!--.footer-->
+
+    </body>
+</html>
